@@ -25,6 +25,10 @@ include('Auth/Loggedin.php');
     <div class="form-group">
         <button type="submit" class="btn btn-danger" name='register'>Register &rarr;</button>
     </div>
+
+    <p>
+      Already have an account?  <a href="<?= APP_HOME; ?>login.php">Please Login</a>
+    </p>
 </form>
 </div>
 
