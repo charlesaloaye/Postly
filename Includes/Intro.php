@@ -1,5 +1,5 @@
 <div class="jumbotron p-5 bg-secondary text-center">
-    <h1>Welcome
+    <h1 class="text-light">Welcome
 
         <?php if($_SESSION['auth']):?>
         Dear <?= $user->name ; ?>
@@ -17,7 +17,8 @@
 
         <?php else: ?>
 
-        <a href="<?= APP_HOME; ?>post.php" class="btn btn-success">Add New Post </a>
+        <a href="<?= APP_HOME; ?>new-post.php" class="btn btn-success">Add New Post </a>
+        <a href="<?= APP_HOME; ?>my-post.php" class="btn btn-warning">My Post </a>
         <a href="<?= APP_HOME; ?>logout.php" class="btn btn-primary">Logout </a>
         <?php endif; ?>
 
