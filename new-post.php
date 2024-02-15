@@ -3,11 +3,15 @@ include('Includes/Header.php');
 include('Auth/NotLoggedin.php'); 
 ?>
 <div class="card shadow p-3 mt-5">
-<form action="" method="post">
+<form action="" method="post" enctype="multipart/form-data">
 <h1>New Post</h1>
 
 <div class="alert <?= $status; ?>">
 <?= $message; ?>
+</div>
+
+<div class="form-group">
+    <input accept="image/*" type="file" name="post_image" id="" class="form-control">
 </div>
 
 <div class="form-group mt-3">
