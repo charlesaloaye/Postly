@@ -16,7 +16,7 @@ include('Auth/NotLoggedin.php');
 
     <div class="card mb-2">
         <div class="card-body">
-            <h4 class="card-title"><?= $post->body; ?></h4>
+            <p class="card-title"><?= $post->body; ?></p>
             <small>Written by: <?= $post->name; ?> | <?= $post->created_at;?></small>
         </div>
 

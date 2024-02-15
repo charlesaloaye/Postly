@@ -23,8 +23,10 @@ include('Auth/NotLoggedin.php');
 
     <?php else: ?>
 
-    <div class="jumbotron bg-danger p-4">
+    <div class="jumbotron bg-danger p-4 text-center">
         <h3 class='text-light'>You don't have any post yet</h3>
+
+        <a href="<?= APP_HOME; ?>new-post.php" class="btn btn-outline-light">New Post</a>
     </div>
 
     <?php endif;?>
