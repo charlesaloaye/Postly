@@ -1,6 +1,6 @@
-<?php 
-include('Includes/Header.php'); 
-include('Auth/Loggedin.php'); 
+<?php
+include('Includes/Header.php');
+include('Auth/Loggedin.php');
 ?>
 <div class="card shadow p-3 mt-5">
     <form action="" method="post">
