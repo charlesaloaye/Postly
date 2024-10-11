@@ -1,6 +1,6 @@
-<?php 
-include('Includes/Header.php'); 
-include('Auth/NotLoggedin.php'); 
+<?php
+include('Includes/Header.php');
+include('Auth/NotLoggedin.php');
 ?>
 <div class="container mt-4">
     <div class="alert <?= $status; ?>">
@@ -8,7 +8,7 @@ include('Auth/NotLoggedin.php');
     </div>
 
 
-    <?php if($post):?>
+    <?php if ($post): ?>
 
     <hr>
     <h1><?= $post->title; ?></h1>
@@ -17,17 +17,17 @@ include('Auth/NotLoggedin.php');
     <div class="card mb-2">
         <div class="card-body">
             <p class="card-title"><?= $post->body; ?></p>
-            <small>Written by: <?= $post->name; ?> | <?= $post->created_at;?></small>
+            <small>Written by: <?= $post->name; ?> | <?= $post->created_at; ?></small>
         </div>
 
-        <?php  if($post->uid == $user->uid): ?>
+        <?php if ($post->uid == $user->uid): ?>
         <div class="text-right">
             <form action="" method="post" class='p-3'>
                 <input type="hidden" name="p_id" value="<?= $post->p_id; ?>">
                 <button type="submit" name="delete_post" class="btn btn-danger">Delete Post</button>
             </form>
         </div>
-        <?php endif;?>
+        <?php endif; ?>
     </div>
 
 
@@ -37,5 +37,5 @@ include('Auth/NotLoggedin.php');
         <h3 class='text-light'>Invalid Post Id</h3>
     </div>
 
-    <?php endif;?>
+    <?php endif; ?>
 </div>
